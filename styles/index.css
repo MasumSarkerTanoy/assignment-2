@@ -108,10 +108,10 @@ nav{
 /* -------------------Popular page section---------------------- */
 #popular{
     width: 82vw;
-    height: 50rem;
     margin: 10rem auto;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 55rem;
     column-gap: 5rem;
 }
 /* description part */
@@ -129,21 +129,22 @@ nav{
 }
 #desc ul{
     padding-left: 2rem;
-    color: rgba(19, 19, 24, 0.70);
+    color: rgba(56, 56, 92, 0.7);
     font-size: 1.6rem;
     font-weight: 400;
 }
 #desc li{
     margin-top: 1rem;
 }
+
 #famous-place img{
     width: 100%;
     height: 100%;
 }
 /* ------------------Choose your Destination------------------- */
-/* #destination{
+#destination{
     width: 82vw;
-    margin: auto;
+    margin: 10rem auto;
 }
 #destination>h1{
     color: #131318;
@@ -159,8 +160,8 @@ nav{
     font-size: 1.6rem;
     font-weight: 400;
     margin:2.4rem auto 4.8rem ;
-} */
-/* #place-container>div{
+}
+#place-container>div{
     position: relative;
 }
 #place-container h1{
@@ -170,67 +171,39 @@ nav{
     font-weight: 800;
     top: 50%;
     right: 50%;
-} */
+}
 /* image-gallary */
-/* .maldives{
-    grid-area: mal;
-}
-.indonesia{
-    grid-area: ind;
-}
-.srilanka{
-    grid-area: sri;
-}
-.north-america{
-    grid-area: na;
-}
-.kashmir{
-    grid-area: kash;
-}
-.bangladesh{
-    grid-area: bang;
-}
-.bandarban{
-    grid-area: band;
-} 
-#place-container{
-    display: grid;
- grid-template-areas: 
-    'mal mal mal mal mal mal ind ind ind ind ind ind'
-    'sri sri sri na na na na na kash kash kash'
-    'bang bang bang bang bang band band band band band band band'
-    ; 
-}*/
- /* #place-container{
+#place-container img{
+    width: 100%;
+    height: 100%;
+    }
+ #place-container{
     display: grid;
     grid-template-columns:repeat(12, 1fr);
     grid-gap: 1rem;
 }
 .maldives{
-    grid-column:1/span 6 ;
+    grid-column:span 6 ;
 }
 .indonesia{
-    grid-column:7/span 6 ;
+    grid-column:span 6 ;
 }
 .srilanka{
-    grid-column:1/span 4 ;
+    grid-column:span 4 ;
 }
 .north-america{
-    grid-column:5/span 5 ;
+    grid-column:span 5 ;
 }
 .kashmir{
-    grid-column:10/span 3 ;
+    grid-column:span 3 ;
 }
 .bangladesh{
-    grid-column:1 /span 5 ;
+    grid-column:span 5 ;
 }
 .bandarban{
-    grid-column:6/span 7 ;
+    grid-column:span 7 ;
 }  
-#place-container img{
-width: 100%;
-height: 100%;
-} */
+
 /* ---------------------------------------------------------------------------------------- */
 /* Responsive design for 600px Screen size */
 @media screen and (max-width:600px) {
@@ -279,4 +252,11 @@ height: 100%;
         width: 95vw;
     }
 /* --------------popular place------------------- */
+#place-container{
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+#destination > p{
+    width: 80%;
+}
 }
