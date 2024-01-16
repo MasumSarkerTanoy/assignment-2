@@ -23,7 +23,7 @@ span{
 }
 /* ------------------header section ---------------------*/
 header{
-    width: 82%;
+    width: 82vw;
     margin: auto;
     border: 2px solid aqua;
 }
@@ -56,6 +56,7 @@ nav{
     height: 50rem;
     background-image: url(../Images/banner.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +112,9 @@ nav{
         display: block;
         font-size: 2.4rem;
     }
+    header{
+        width: 95vw;
+    }
     #agency{
         gap: 3.5rem;
     }
@@ -129,6 +133,7 @@ nav{
     }
     #banner p{
         font-size: 1.4rem;
+        color: black;
     }
     #form{
         width: 90%;
