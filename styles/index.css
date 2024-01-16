@@ -267,7 +267,7 @@ nav{
 /* ----------------------------Newsletter----------------------- */
 #newsletter{
     width: 82vw;
-    margin: 3rem auto;
+    margin:auto;
     display: grid;
     grid-template-columns: 2fr 3fr;
     column-gap: 2.4rem;
