@@ -108,7 +108,7 @@ nav{
 /* -------------------Popular page section---------------------- */
 #popular{
     width: 82vw;
-    margin: 10rem auto;
+    margin: 3rem auto;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 55rem;
@@ -144,7 +144,7 @@ nav{
 /* ------------------Choose your Destination------------------- */
 #destination{
     width: 82vw;
-    margin: 10rem auto;
+    margin: 3rem auto;
 }
 #destination>h1{
     color: #131318;
@@ -206,7 +206,7 @@ nav{
 /* ---------why choose us------------ */
 #choose{
     width: 82vw;
-    margin: 10rem auto;
+    margin: 3rem auto;
 }
 #choose >h1{
     color: #131318;
@@ -264,6 +264,48 @@ nav{
     padding: 3.2rem;
 }
 
+/* ----------------------------Newsletter----------------------- */
+#newsletter{
+    width: 82vw;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 2.4rem;
+}
+#subscribe{
+    border-radius: 1.6rem;
+    border: 1px solid var(--prm-color);
+    padding: 4rem;
+}
+#subscribe > h1{
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+#subscribe > p{
+    color: #5A5A5D;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+}
+#subscribe input{
+    width: 39.3rem;
+    height: 5.2rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+#subscribe button{
+    width: 100%;
+}
+#discount > img{
+    width: 100%;
+    height: 100%;
+}
 /* ---------------------------------------------------------------------------------------- */
 /* Responsive design for 600px Screen size */
 @media screen and (max-width:600px) {
@@ -362,5 +404,11 @@ nav{
 }
 #price{
     grid-column: 1/-1;
+}
+/* ----------------Newsletter---------------- */
+#newsletter{
+    width: 95vw;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
 }
 }
