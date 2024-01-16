@@ -85,7 +85,6 @@ nav{
     text-align: center;
 }
 #form{
-    width: 65.5%;
     background-color: rgba(255, 255, 255, 0.30);
 }
 #form form{
@@ -103,7 +102,7 @@ nav{
     font-size: 1.6rem;
     font-weight: 400;
     padding-left: 1.6rem;
-}
+} 
 
 
 /* -------------------Popular page section---------------------- */
@@ -111,10 +110,9 @@ nav{
     width: 82vw;
     height: 50rem;
     margin: 10rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
 }
 /* description part */
 #desc h1{
@@ -138,6 +136,101 @@ nav{
 #desc li{
     margin-top: 1rem;
 }
+#famous-place img{
+    width: 100%;
+    height: 100%;
+}
+/* ------------------Choose your Destination------------------- */
+/* #destination{
+    width: 82vw;
+    margin: auto;
+}
+#destination>h1{
+    color: #131318;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+#destination > p{
+    width: 55%;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin:2.4rem auto 4.8rem ;
+} */
+/* #place-container>div{
+    position: relative;
+}
+#place-container h1{
+    position: absolute;
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 800;
+    top: 50%;
+    right: 50%;
+} */
+/* image-gallary */
+/* .maldives{
+    grid-area: mal;
+}
+.indonesia{
+    grid-area: ind;
+}
+.srilanka{
+    grid-area: sri;
+}
+.north-america{
+    grid-area: na;
+}
+.kashmir{
+    grid-area: kash;
+}
+.bangladesh{
+    grid-area: bang;
+}
+.bandarban{
+    grid-area: band;
+} 
+#place-container{
+    display: grid;
+ grid-template-areas: 
+    'mal mal mal mal mal mal ind ind ind ind ind ind'
+    'sri sri sri na na na na na kash kash kash'
+    'bang bang bang bang bang band band band band band band band'
+    ; 
+}*/
+ /* #place-container{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+.maldives{
+    grid-column:1/span 6 ;
+}
+.indonesia{
+    grid-column:7/span 6 ;
+}
+.srilanka{
+    grid-column:1/span 4 ;
+}
+.north-america{
+    grid-column:5/span 5 ;
+}
+.kashmir{
+    grid-column:10/span 3 ;
+}
+.bangladesh{
+    grid-column:1 /span 5 ;
+}
+.bandarban{
+    grid-column:6/span 7 ;
+}  
+#place-container img{
+width: 100%;
+height: 100%;
+} */
 /* ---------------------------------------------------------------------------------------- */
 /* Responsive design for 600px Screen size */
 @media screen and (max-width:600px) {
@@ -168,9 +261,6 @@ nav{
         font-size: 1.4rem;
         color: black;
     }
-    #form{
-        width: 90%;
-    }
     #form form{
         flex-direction: column;
         align-items: center;
@@ -184,7 +274,9 @@ nav{
 
     /* --------------------------Popular Section----------------- */
     #popular{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
         width: 95vw;
     }
+/* --------------popular place------------------- */
 }
