@@ -33,7 +33,6 @@ span{
 header{
     width: 82vw;
     margin: auto;
-    border: 2px solid aqua;
 }
 nav{
     display: flex;
@@ -181,5 +180,11 @@ nav{
     }
     #form button{
         width: 25.5rem;
+    }
+
+    /* --------------------------Popular Section----------------- */
+    #popular{
+        flex-direction: column;
+        width: 95vw;
     }
 }
