@@ -203,6 +203,66 @@ nav{
 .bandarban{
     grid-column:span 7 ;
 }  
+/* ---------why choose us------------ */
+#choose{
+    width: 82vw;
+    margin: 10rem auto;
+}
+#choose >h1{
+    color: #131318;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+}
+#choose > p{
+    width: 55%;
+    margin: 2.4rem auto;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.card-image{
+    height: 6.4rem;
+    width: 6.4rem;
+}
+.card-title{
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.card-desc{
+    color: #5A5A5D;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.4rem;
+    padding: 3.2rem;
+}
+#hotel{
+    grid-column: span 2;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 3.2rem;
+}
+#service{
+    grid-column: span 2;
+    border-radius: 1.6rem;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 3.2rem;
+}
+#price{
+    grid-column: 2/ span 2;
+    border-radius: 1.6rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 3.2rem;
+}
 
 /* ---------------------------------------------------------------------------------------- */
 /* Responsive design for 600px Screen size */
@@ -258,5 +318,49 @@ nav{
 }
 #destination > p{
     width: 80%;
+}
+.maldives{
+    grid-column:1 /-1 ;
+}
+.indonesia{
+    grid-column: 1 /-1  ;
+}
+.srilanka{
+    grid-column: 1 /-1  ;
+}
+.north-america{
+    grid-column: 1 /-1  ;
+}
+.kashmir{
+    grid-column: 1 /-1  ;
+}
+.bangladesh{
+    grid-column: 1 /-1  ;
+}
+.bandarban{
+    grid-column: 1 /-1  ;
+} 
+/* ---------why choose us-------- */
+#choose{
+    width: 95vw;
+    margin: 10rem auto;
+}
+#choose > p{
+    width: 80%;
+}
+#card-container{
+    grid-template-columns:1fr;
+    row-gap: 2rem;
+    padding:0;
+}
+
+#hotel{
+    grid-column:1/-1;
+}
+#service{
+    grid-column:1/-1;
+}
+#price{
+    grid-column: 1/-1;
 }
 }
