@@ -439,6 +439,10 @@ hr{
     grid-template-columns: 1fr;
     row-gap: 1.6rem;
 }
+#subscribe input{
+    width: 100%;
+}
+/* footer */
 footer p{
     width: 80%;
 }
